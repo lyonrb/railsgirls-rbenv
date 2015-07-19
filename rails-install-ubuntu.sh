@@ -26,10 +26,10 @@ echo "Rubyをインストールします！"
 rbenv install 2.2.2
 rbenv global 2.2.2
  
-gem install bundler --no-documents
+gem install bundler --no-document
  
 echo "Railsをインストールします！"
-gem install rails --no-documents
+gem install rails --no-document
  
 echo -e "\n- - - - - -\n"
 echo -e "インストールされたバージョンが正しいか確認します:\n"
