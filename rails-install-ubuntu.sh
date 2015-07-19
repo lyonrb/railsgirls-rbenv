@@ -14,12 +14,13 @@ sudo apt-get install imagemagick --fix-missing -y
  
 echo "Rubyの管理のため、rbenvとruby-buildをインストールします。"
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.rbenv.sh
+echo 'eval "$(rbenv init -)"' >> ~/.rbenv.sh
+echo '. ~/.rbenv.sh' >> ~/.bashrc
 mkdir -p ~/.rbenv/plugins
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
- 
-source ~/.bashrc
+
+source ~/.rbenv.sh
  
 echo "Rubyをインストールします！"
 rbenv install 2.2.3
