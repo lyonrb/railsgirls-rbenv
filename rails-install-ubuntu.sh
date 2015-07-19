@@ -35,13 +35,13 @@ echo -e "\n- - - - - -\n"
 echo -e "インストールされたバージョンが正しいか確認します:\n"
  
 echo -n "sqlite は 3.8.1 以上であるべきです:        "
-sqlite3 --version
+sqlite3 --version | awk '{print $1}'
  
 echo -n "rbenv は 0.4.0 以上であるべきです:         "
-rbenv --version | awk '{print $1}'
+rbenv --version | awk '{print $2}'
  
 echo -n "ruby-build は 20150413 以降であるべきです: "
-ruby-build --version | awk '{print $1}'
+~/.rbenv/plugins/ruby-build/bin/ruby-build --version | awk '{print $2}'
  
 echo -n "Ruby は 2.2.1 以上であるべきです:          "
 ruby -v | cut -d " " -f 2
