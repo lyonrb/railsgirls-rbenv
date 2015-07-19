@@ -23,8 +23,8 @@ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-bu
 source ~/.rbenv.sh
  
 echo "Rubyをインストールします！"
-rbenv install 2.2.3
-rbenv global 2.2.3
+rbenv install 2.2.2
+rbenv global 2.2.2
  
 gem install bundler --no-documents
  
