@@ -2,15 +2,15 @@
  
 set -e
  
-echo "パッケージを最新にします。パスワードを聞かれることがあります。"
-sudo -v
-sudo apt-get update -y
+# echo "パッケージを最新にします。パスワードを聞かれることがあります。"
+# sudo -v
+# sudo apt-get update -y
  
-echo "必要なパッケージをインストールします。"
-sudo apt-get install git build-essential bison openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev nodejs libffi-dev -y
+# echo "必要なパッケージをインストールします。"
+# sudo apt-get install git build-essential bison openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev nodejs libffi-dev -y
  
-echo "ImageMagickを追加でインストールします"
-sudo apt-get install imagemagick --fix-missing -y
+# echo "ImageMagickを追加でインストールします"
+# sudo apt-get install imagemagick --fix-missing -y
  
 echo "Rubyの管理のため、rbenvとruby-buildをインストールします。"
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
